@@ -14,6 +14,8 @@
 		CA29D5361F759DEB0004305C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA29D5341F759DEB0004305C /* LaunchScreen.storyboard */; };
 		CA29D5411F759DEB0004305C /* TableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D5401F759DEB0004305C /* TableViewTestTests.swift */; };
 		CA29D54C1F759DEB0004305C /* TableViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D54B1F759DEB0004305C /* TableViewTestUITests.swift */; };
+		CA29D55B1F759EAD0004305C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D55A1F759EAD0004305C /* TableViewController.swift */; };
+		CA29D55E1F75A5570004305C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D55D1F75A5570004305C /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CA29D5471F759DEB0004305C /* TableViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA29D54B1F759DEB0004305C /* TableViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTestUITests.swift; sourceTree = "<group>"; };
 		CA29D54D1F759DEB0004305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA29D55A1F759EAD0004305C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CA29D55D1F75A5570004305C /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		CA29D52A1F759DEB0004305C /* TableViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				CA29D55C1F75A5390004305C /* Views */,
+				CA29D5591F759E3C0004305C /* Controllers */,
 				CA29D52B1F759DEB0004305C /* AppDelegate.swift */,
-				CA29D52D1F759DEB0004305C /* ViewController.swift */,
 				CA29D52F1F759DEB0004305C /* Main.storyboard */,
 				CA29D5321F759DEB0004305C /* Assets.xcassets */,
 				CA29D5341F759DEB0004305C /* LaunchScreen.storyboard */,
@@ -123,6 +128,23 @@
 				CA29D54D1F759DEB0004305C /* Info.plist */,
 			);
 			path = TableViewTestUITests;
+			sourceTree = "<group>";
+		};
+		CA29D5591F759E3C0004305C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA29D52D1F759DEB0004305C /* ViewController.swift */,
+				CA29D55A1F759EAD0004305C /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA29D55C1F75A5390004305C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA29D55D1F75A5570004305C /* CustomCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA29D52E1F759DEB0004305C /* ViewController.swift in Sources */,
+				CA29D55B1F759EAD0004305C /* TableViewController.swift in Sources */,
+				CA29D55E1F75A5570004305C /* CustomCell.swift in Sources */,
 				CA29D52C1F759DEB0004305C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
